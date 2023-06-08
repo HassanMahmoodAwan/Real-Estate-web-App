@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* This file will goes to output css */
+
+
+
+/* Global variable */
+*{
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+}
+html{scroll-behavior: smooth;}
+
+body{ font-family:'Poppins', sans-serif;
+    width: 100% !important;
+
+
+}
+
+h1, h2, h3, h4{
+    font-weight: 600;
+}
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+
+.bottomBorder{
+    border: none none block none;
+}
+
+.icons{
+    width: 30px !important;
+    height: 30px !important;
+} 
+
+/* Body gradient color using HyperMesh */
+.darkBody{
+    /* background-color: rgb(30, 41, 59);
+    background-image: radial-gradient(at 12% 38%, rgb(15, 23, 42) 0, transparent 64%), radial-gradient(at 63% 77%, rgb(15, 23, 42) 0, transparent 100%), radial-gradient(at 50% 0%, rgb(49, 46, 129) 0, transparent 70%), radial-gradient(at 83% 55%, rgb(30, 58, 138) 0, transparent 60%) !important; */
+
+        background-color: rgb(49, 46, 129) !important;
+        background-image: radial-gradient(at 2% 38%, rgb(15, 23, 42) 0, transparent 64%), radial-gradient(at 63% 77%, rgb(15, 23, 42) 0, transparent 100%), radial-gradient(at 50% 42%, rgb(49, 46, 129) 0, transparent 100%), radial-gradient(at 63% 53%, rgb(30, 58, 138) 0, transparent 95%);
+}
+
+
+
+/* =====NAVBAR===== */
+
+.onhover_btn:hover
+{
+    border-radius: 14px 3px 3px 3px;
+    font-size: 16.5px;
+   
+}
+
+/* ======HERO SECTION===== */
+
+#heroHeading{ font-size: 50px;}
+
+.img_properties{
+    border-radius: 100px 15px 15px 15px;
+    object-fit: fill;
+}
+
+/* =====left Floating Part===== */
+.rounded_border{
+    border-radius: 0 10px 10px 0;
+   
+}
+
+
+/* Anonomous BorderStyle */
+.borderStyle{
+    border: 2px solid black;
+    border-style: none none solid none;
+}
+
+
+/* Creating a Project section with parallex feature */
+ #imageProject{
+    background-image: url('/images/luxury-real-estate.jpg');
+   
+    z-index: 100;
+    background-attachment: fixed;
+
+       
+        background-repeat: no-repeat;
+        
+} 
+
+
+
+
+.swiper-slide{
+    width: 320px !important;
+}
+
+
+
+/* Scroll Animation using show and Hidden classes */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1 !important;
+}
